@@ -213,9 +213,9 @@ class ApiService {
 
       // log(url);
       if (isArray == true) {
-        return ServerHandleResponse.instance.serverResponseError(200, isLogin: isUnAuth, listObj: result.data);
+        return ServerHandleResponse.instance.serverResponseError(result.statusCode, isLogin: isUnAuth, listObj: result.data);
       } else {
-        return ServerHandleResponse.instance.serverResponseError(200, isLogin: isUnAuth, object: result.data);
+        return ServerHandleResponse.instance.serverResponseError(result.statusCode, isLogin: isUnAuth, object: result.data);
       }
     } on DioError catch (onError) {
       final res = (onError).response;
@@ -231,9 +231,9 @@ class ApiService {
       // }
 
       if (isArray == true) {
-        return ServerHandleResponse.instance.serverResponseError(404, listObj: null, isLogin: isUnAuth, message: "page not found");
+        return ServerHandleResponse.instance.serverResponseError(res!.statusCode!, listObj: null, isLogin: isUnAuth, message: "page not found");
       }
-      return ServerHandleResponse.instance.serverResponseError(404, object: {}, isLogin: isUnAuth, message: "page not found");
+      return ServerHandleResponse.instance.serverResponseError(res!.statusCode!, object: {}, isLogin: isUnAuth, message: "page not found");
     }
   }
 }
