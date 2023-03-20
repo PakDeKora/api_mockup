@@ -1,16 +1,10 @@
-# coin_gecko
+# API - Coin Gecko Example
 
-A new Flutter project.
+Flutter project with API
 
-## Getting Started
+## Screenshot
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+    <img src="https://lh6.googleusercontent.com/d/1nStzeUzxfukr8lzt1hkY40QIGEKL67Zj" height=800/>
+    <img src="https://lh6.googleusercontent.com/d/1jMBhkpBI-OvmYXFSlzqd6r_l0fUR-v0Y" height=800/>
+</p>
